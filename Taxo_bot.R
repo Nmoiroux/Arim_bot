@@ -2,6 +2,11 @@ library(atrrr)
 library(magick)
 library(rgbif)
 source(file = "Functions_W.R")
+
+# Read environment variables
+bluesky_handle <- Sys.getenv("BLUESKY_HANDLE")
+bluesky_app_password <- Sys.getenv("BLUESKY_APP_PASSWORD")
+
 # 
 max_filesize <- 900000 # in bytes (900 KB), limited to 1000000 bytes)
 N_pp <- 50 # number of past posts image paths to remember
